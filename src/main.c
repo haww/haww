@@ -30,7 +30,7 @@ void main_loop() {
 
 char *read_line() {
     char *line = NULL;
-    ssize_t buffer_size = 0;
+    size_t buffer_size = 0;
     getline(&line, &buffer_size, stdin);
     return line;
 }
